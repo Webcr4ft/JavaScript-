@@ -1,4 +1,5 @@
 What Is a String Object, and How Does It Differ from String Primitive?
+
 In previous modules you have been used to working with strings literals like this:
 
 const greeting = "Hello, World!";
