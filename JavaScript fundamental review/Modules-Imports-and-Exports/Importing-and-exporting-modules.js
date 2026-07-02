@@ -1,13 +1,8 @@
 # What Is a Module in JavaScript?
 
-A **module** in JavaScript is a self-contained file that contains related code, such as:
+A **module** in JavaScript is a self-contained file that contains related functions, classes, variables, or constants.
 
-- Functions
-- Variables
-- Classes
-- Constants
-
-Think of a module as a **building block** of your application. Just like a chapter in a book focuses on one topic, a module focuses on one specific feature or functionality.
+Think of a module as a **building block** of your application. Just like a chapter in a book focuses on one topic, a module focuses on a specific piece of functionality.
 
 Using modules makes your code:
 
@@ -24,16 +19,16 @@ The modern JavaScript module system is called **ES6 Modules** (introduced in **E
 
 It provides two keywords:
 
-- `export` → Makes code available to other files.
-- `import` → Brings exported code into another file.
+- `export` — Makes code available to other files.
+- `import` — Brings exported code into another file.
 
 ---
 
 # Exporting from a Module
 
-Create a separate JavaScript file, for example:
+Create a separate JavaScript file.
 
-`math.js`
+**`math.js`**
 
 ```javascript
 export function add(a, b) {
@@ -63,7 +58,7 @@ A module can export **multiple values**.
 
 To use the exported items in another file:
 
-`app.js`
+**`app.js`**
 
 ```javascript
 import { add, subtract, PI } from "./math.js";
@@ -99,9 +94,9 @@ console.log(Math.PI);               // 3.14159
 
 Here:
 
-- `*` means **everything**
-- `as Math` creates an object named `Math`
-- Every exported value becomes a property of that object
+- `*` means **everything**.
+- `as Math` creates an object named `Math`.
+- Every exported value becomes a property of that object.
 
 ---
 
@@ -111,7 +106,7 @@ Sometimes a module mainly exports **one thing**.
 
 In that case, use a **default export**.
 
-### `math.js`
+**`math.js`**
 
 ```javascript
 export default function multiply(a, b) {
@@ -119,7 +114,7 @@ export default function multiply(a, b) {
 }
 ```
 
-### `app.js`
+**`app.js`**
 
 ```javascript
 import multiply from "./math.js";
@@ -132,7 +127,7 @@ Unlike named exports:
 - No curly braces are needed.
 - You can choose **any name** for the import.
 
-For example, this also works:
+For example:
 
 ```javascript
 import myFunction from "./math.js";
@@ -183,12 +178,12 @@ Without `type="module"`, the browser will not recognize the `import` and `export
 
 Modules help you:
 
-- Organize your code into smaller files
-- Reuse code across projects
-- Keep related functionality together
-- Avoid global variable conflicts
-- Make large applications easier to maintain
-- Improve code readability
+- Organize your code into smaller files.
+- Reuse code across projects.
+- Keep related functionality together.
+- Avoid global variable conflicts.
+- Make large applications easier to maintain.
+- Improve code readability.
 
 ---
 
