@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+
+body.theme-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+
+body.theme-dark {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* Ocean Theme */
+
+body.theme-ocean {
+  background-color: #0f4c75;
+  color: #ffffff;
+}
+
+/* Nord Theme */
+
+body.theme-nord {
+  background-color: #2e3440;
+  color: #eceff4;
+}
+
+#theme-switcher-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#theme-dropdown {
+  width: 180px;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#theme-dropdown li {
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+/* Light Menu */
+
+body.theme-light #theme-dropdown {
+  background: white;
+  color: black;
+}
+
+body.theme-light #theme-dropdown li:hover {
+  background: #eeeeee;
+}
+
+/* Dark Menu */
+
+body.theme-dark #theme-dropdown {
+  background: #333333;
+  color: white;
+}
+
+body.theme-dark #theme-dropdown li:hover {
+  background: #555555;
+}
+
+/* Ocean Menu */
+
+body.theme-ocean #theme-dropdown {
+  background: #145374;
+  color: white;
+}
+
+body.theme-ocean #theme-dropdown li:hover {
+  background: #1b6ca8;
+}
+
+/* Nord Menu */
+
+body.theme-nord #theme-dropdown {
+  background: #3b4252;
+  color: #eceff4;
+}
+
+body.theme-nord #theme-dropdown li:hover {
+  background: #4c566a;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+}
