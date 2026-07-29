@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Switcher</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-light">
+
+  <button
+    id="theme-switcher-button"
+    aria-haspopup="true"
+    aria-expanded="false"
+    aria-controls="theme-dropdown">
+    Switch Theme
+  </button>
+
+  <ul
+    id="theme-dropdown"
+    role="menu"
+    aria-labelledby="theme-switcher-button"
+    hidden>
+
+    <li id="theme-light" role="menuitem">Light</li>
+    <li id="theme-dark" role="menuitem">Dark</li>
+    <li id="theme-ocean" role="menuitem">Ocean</li>
+    <li id="theme-nord" role="menuitem">Nord</li>
+
+  </ul>
+
+  <p id="status" aria-live="polite">
+    Current Theme: Light
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
