@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex Sandbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>Regex Sandbox</h1>
+
+    <section class="pattern-section">
+
+      <div class="pattern-input">
+        <label for="pattern">Regex Pattern:</label>
+
+        <div class="regex-input">
+          <span>/</span>
+          <input
+            id="pattern"
+            type="text"
+            placeholder="Enter your regex pattern"
+          >
+        </div>
+      </div>
+
+      <div class="flags">
+        <span>Flags:</span>
+
+        <label>
+          <input type="checkbox" id="i">
+          i
+        </label>
+
+        <label>
+          <input type="checkbox" id="g">
+          g
+        </label>
+      </div>
+
+    </section>
+
+    <section class="test-section">
+
+      <label for="test-string">Test String:</label>
+
+      <textarea
+        id="test-string"
+        placeholder="Enter your test string"
+      ></textarea>
+
+    </section>
+
+    <button id="test-btn">Test Regex</button>
+
+    <section class="result-section">
+
+      <label for="result">Result:</label>
+
+      <div id="result"></div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
